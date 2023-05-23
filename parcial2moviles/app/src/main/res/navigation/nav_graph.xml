@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/displayerFragment">
+
+    <fragment
+        android:id="@+id/displayerFragment"
+        android:name="com.mayencastro.parcial2moviles.ui.sport.displayer.DisplayerFragment"
+        android:label="DisplayerFragment" >
+        <action
+            android:id="@+id/action_displayerFragment_to_sportFragment"
+            app:destination="@id/sportFragment" />
+        <action
+            android:id="@+id/action_displayerFragment_to_newSportFragment"
+            app:destination="@id/newSportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sportFragment"
+        android:name="com.mayencastro.parcial2moviles.ui.sport.SportFragment"
+        android:label="SportFragment" />
+    <fragment
+        android:id="@+id/newSportFragment"
+        android:name="com.mayencastro.parcial2moviles.ui.sport.newsport.NewSportFragment"
+        android:label="NewSportFragment" />
+</navigation>

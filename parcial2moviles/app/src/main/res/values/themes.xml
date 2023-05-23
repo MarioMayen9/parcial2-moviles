@@ -3,6 +3,10 @@
     <style name="Base.Theme.Parcial2moviles" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#FEFAFD</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
     </style>
 
     <style name="Theme.Parcial2moviles" parent="Base.Theme.Parcial2moviles" />

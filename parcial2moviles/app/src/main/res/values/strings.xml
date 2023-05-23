@@ -2,4 +2,8 @@
     <string name="app_name">parcial2moviles</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deportes_y_sus_reglas">Deportes y sus reglas</string>
+    <string name="title_add_dragment">Ingrese los datos para de los deportes para almacenarlos.</string>
+    <string name="rules">Reglas</string>
+    <string name="title_especificaciones">Especificaciones</string>
 </resources>

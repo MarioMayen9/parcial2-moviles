@@ -17,15 +17,14 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="325dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="@dimen/big_gap"
-                android:text="Ingrese los datos para  de los deportes para almacenarlos."
+                android:text="@string/title_add_dragment"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -39,12 +38,12 @@
                 android:layout_marginStart="@dimen/default_gap"
                 android:layout_marginTop="@dimen/big_gap"
                 android:layout_marginEnd="@dimen/default_gap"
-                android:text="@={viewmodel.name}"
                 android:hint="Deporte"
                 android:minHeight="48dp"
                 android:padding="@dimen/default_gap"
-                android:textColorHint="@color/black"
+                android:text="@={viewmodel.name}"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -56,12 +55,12 @@
                 android:layout_marginStart="@dimen/default_gap"
                 android:layout_marginTop="@dimen/big_gap"
                 android:layout_marginEnd="@dimen/default_gap"
-                android:text="@={viewmodel.rules}"
-                android:hint="Reglas"
+                android:hint="@string/rules"
                 android:minHeight="48dp"
                 android:padding="@dimen/default_gap"
-                android:textColorHint="@color/black"
+                android:text="@={viewmodel.rules}"
                 android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
@@ -69,20 +68,19 @@
 
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <Button
                 android:id="@+id/submit_action_button"
-                android:onClick="@{()->viewmodel.create()}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/big_gap"
-                android:layout_marginBottom="@dimen/big_gap"
-                android:backgroundTint="#E1C61C"
-                android:clickable="true"
-                android:contentDescription="AddModel"
-                android:src="@drawable/baseline_add_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:text="save"
+                android:onClick="@{()->viewmodel.create()}"
 
+                android:textColor="@color/black"
+                android:backgroundTint="#E1C61C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descripcionEditText" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
